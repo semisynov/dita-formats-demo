@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><?path2rootmap-uri ./?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map cascade="merge" specializations="@props/deliveryTarget">
+    <title>Document</title>
+    <topicref href="demo-topic1.dita" type="topic"><topicmeta><navtitle>1. Document</navtitle><linktext>1. Document</linktext></topicmeta></topicref>
+    <topicref href="demo-topic2.dita" type="topic"><topicmeta><navtitle>2. Document</navtitle><linktext>2. Document</linktext></topicmeta></topicref>
+</map>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?path2rootmap-uri ./?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ayh_y5q_qtc" specializations="@props/deliveryTarget">
+    <title>2. Document</title>
+    <related-links>
+        <link href="demo-topic1.dita" type="topic"><linktext>1. Document</linktext></link>
+    </related-links>
+</topic>

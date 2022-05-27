@@ -1,0 +1,59 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.0'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'ru.vtb'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    set('testcontainersVersion', "1.17.2")
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation 'org.dita-ot:dost:3.7.2'
+
+    compileOnly fileTree(dir: "dita-ot-3.7.2/lib/", include: "*.jar")
+    compileOnly fileTree(dir: "dita-ot-3.7.2/plugins/org.dita.index/lib/", include: "*.jar")
+    compileOnly fileTree(dir: "dita-ot-3.7.2/plugins/org.dita.pdf2/lib/", include: "*.jar")
+    compileOnly fileTree(dir: "dita-ot-3.7.2/plugins/org.dita.pdf2.axf/lib/", include: "*.jar")
+    compileOnly fileTree(dir: "dita-ot-3.7.2/plugins/org.dita.pdf2.axf/lib/", include: "*.jar")
+    compileOnly fileTree(dir: "dita-ot-3.7.2/plugins/org.dita.pdf2.fop/lib/", include: "*.jar")
+    compileOnly fileTree(dir: "dita-ot-3.7.2/plugins/org.dita.pdf2.xep/lib/", include: "*.jar")
+    compileOnly fileTree(dir: "dita-ot-3.7.2/plugins/org.dita.eclipsehelp/lib/", include: "*.jar")
+    compileOnly fileTree(dir: "dita-ot-3.7.2/plugins/org.dita.htmlhelp/lib/", include: "*.jar")
+    compileOnly fileTree(dir: "dita-ot-3.7.2/plugins/org.lwdita/lib/", include: "*.jar")
+
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'org.postgresql:postgresql'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'org.testcontainers:postgresql'
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.testcontainers:testcontainers-bom:${testcontainersVersion}"
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

@@ -1,0 +1,15 @@
+application:
+  upload-dir: upload
+  demo:
+    input: demo-input
+    dita-file: demo.ditamap
+    markdown-file: demo-markdown.ditamap
+spring:
+  servlet:
+    multipart:
+      max-file-size: 128KB
+      max-request-size: 128KB
+dita:
+  dita-dir: dita-ot-3.7.2
+  tmp-dir: tmp
+  output-dir: output
