@@ -4,6 +4,7 @@ application:
     input: demo-input
     dita-file: demo.ditamap
     markdown-file: demo-markdown.ditamap
+    lw-dita-file: demo-lwdita.ditamap
 spring:
   servlet:
     multipart:

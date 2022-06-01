@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?path2rootmap-uri ./?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map cascade="merge" id="rlnmap" specializations="">
+  <topicmeta>
+    <navtitle>Remote Lighting Network</navtitle>
+  </topicmeta>
+
+  <keydef keys="product-name" processing-role="resource-only"><topicmeta><linktext>Remote Lighting Network</linktext></topicmeta></keydef>
+  <topicref format="dita" locktitle="yes" href="demo-hdita-topic1.html" type="topic"><topicmeta><navtitle>Welcome to the TinyMCE Cloud demo!</navtitle><linktext>Welcome to the TinyMCE Cloud demo!</linktext><shortdesc><image style="display: block; margin-left: auto; margin-right: auto;" title="Tiny Logo" href="https://www.tiny.cloud/docs/images/logos/android-chrome-256x256.png" width="128" height="128" scope="external"><alt>TinyMCE Logo</alt></image></shortdesc></topicmeta></topicref>
+</map>

@@ -27,8 +27,12 @@ public class DitaProcessService {
         for (DitaFormat outputFormat : DitaFormat.values()) {
             var ditaFile = Path.of(demoProperties.getInput(), DitaFormat.DITA.getValue(), demoProperties.getDitaFile());
             ditaProcessor.process(ditaFile, DitaFormat.DITA, outputFormat);
+
             var markdownFile = Path.of(demoProperties.getInput(), DitaFormat.MARKDOWN.getValue(), demoProperties.getMarkdownFile());
             ditaProcessor.process(markdownFile, DitaFormat.MARKDOWN, outputFormat);
+
+            var lwDitaFile = Path.of(demoProperties.getInput(), DitaFormat.XDITA.getValue(), demoProperties.getLwDitaFile());
+            ditaProcessor.process(lwDitaFile, DitaFormat.XDITA, outputFormat);
         }
         log.info("End demo transform process");
     }

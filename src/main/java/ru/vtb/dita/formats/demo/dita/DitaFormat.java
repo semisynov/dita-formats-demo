@@ -16,7 +16,8 @@ public enum DitaFormat {
     PDF2("pdf2"),
     MARKDOWN("markdown"),
     MARKDOWN_GITHUB("markdown_github"),
-    MARKDOWN_GITBOOK("markdown_gitbook");
+    MARKDOWN_GITBOOK("markdown_gitbook"),
+    XDITA("xdita");
 
     private final String value;
 }

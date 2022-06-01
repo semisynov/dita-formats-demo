@@ -17,5 +17,6 @@ public class ApplicationProperties {
         private String input;
         private String ditaFile;
         private String markdownFile;
+        private String lwDitaFile;
     }
 }
