@@ -1,4 +1,4 @@
-package ru.vtb.dita.formats.demo.dita;
+package ru.dita.formats.demo.dita;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

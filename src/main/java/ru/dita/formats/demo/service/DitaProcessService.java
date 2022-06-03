@@ -1,13 +1,13 @@
-package ru.vtb.dita.formats.demo.service;
+package ru.dita.formats.demo.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import ru.vtb.dita.formats.demo.config.ApplicationProperties;
-import ru.vtb.dita.formats.demo.dita.DitaFormat;
-import ru.vtb.dita.formats.demo.dita.DitaProcessor;
-import ru.vtb.dita.formats.demo.utils.FileUtils;
+import ru.dita.formats.demo.config.ApplicationProperties;
+import ru.dita.formats.demo.dita.DitaFormat;
+import ru.dita.formats.demo.dita.DitaProcessor;
+import ru.dita.formats.demo.utils.FileUtils;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

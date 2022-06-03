@@ -1,4 +1,4 @@
-package ru.vtb.dita.formats.demo.dita;
+package ru.dita.formats.demo.dita;
 
 import lombok.extern.slf4j.Slf4j;
 import org.dita.dost.Processor;
@@ -6,7 +6,7 @@ import org.dita.dost.ProcessorFactory;
 import org.dita.dost.exception.DITAOTException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import ru.vtb.dita.formats.demo.utils.FileUtils;
+import ru.dita.formats.demo.utils.FileUtils;
 
 import java.io.File;
 import java.nio.file.Path;

@@ -1,10 +1,10 @@
-package ru.vtb.dita.formats.demo.utils;
+package ru.dita.formats.demo.utils;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.multipart.MultipartFile;
-import ru.vtb.dita.formats.demo.exception.StorageException;
+import ru.dita.formats.demo.exception.StorageException;
 
 import java.io.File;
 import java.io.IOException;

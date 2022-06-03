@@ -1,4 +1,4 @@
-package ru.vtb.dita.formats.demo.exception;
+package ru.dita.formats.demo.exception;
 
 public class StorageException extends RuntimeException {
 

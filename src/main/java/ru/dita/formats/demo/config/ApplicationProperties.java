@@ -1,4 +1,4 @@
-package ru.vtb.dita.formats.demo.config;
+package ru.dita.formats.demo.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
